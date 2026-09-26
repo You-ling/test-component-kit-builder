@@ -1,5 +1,5 @@
 {
-  "name": "component-kit-builder",
+  "name": "@you-ling/component-kit-builder",
   "version": "0.0.1",
   "description": "A vibe-coded component library built with Claude Code",
   "main": "./dist/index.js",
@@ -49,5 +49,8 @@
     "vite": "^8.0.3",
     "vite-plugin-dts": "^4.5.4",
     "vitest": "^4.1.2"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }
