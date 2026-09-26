@@ -1,6 +1,6 @@
 {
   "name": "@you-ling/component-kit-builder",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A vibe-coded component library built with Claude Code",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
