@@ -29,7 +29,7 @@ none
 - `secondary` — transparent background, 1px `brand-primary` border and text; fills with `brand-subtle` on hover
 - `ghost` — no background or border, `brand-primary` text; fills with `brand-subtle` on hover
 
-All variants are capsule-shaped (fully rounded) and use the body font (Montserrat) at bold weight (700).
+All variants use the `button` corner radius (8px / 0.5rem) and use the body font (Montserrat) at bold weight (700).
 
 **Sizes**:
 - `sm` — 32px tall

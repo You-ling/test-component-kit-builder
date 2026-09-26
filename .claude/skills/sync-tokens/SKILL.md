@@ -36,7 +36,7 @@ If semantic tokens are sufficiently filled, continue to Step 3.
 
 References point at a scale step and always include the full path from the JSON root, including the domain name.
 
-- Color: `{palette.brand.600}` → look up `palette.brand["600"]`. Also `{palette.white}` → `#FFFFFF`, `{palette.black}` → `#000000`.
+- Color: `{palette.brand.600}` → look up `palette.brand["600"]`. Also `{palette.white}` and `{palette.black}` → read `palette.white` / `palette.black` from the JSON (fall back to `#FFFFFF` / `#000000` only if the key is missing).
 - Any scale category: `{<category>.scale.<step>}` → look up `<category>.scale["<step>"]`. This is the same rule for `spacing`, `border-radius`, or any other scale category — the category name in the reference must match the key it lives under.
 
 Skip a token if:

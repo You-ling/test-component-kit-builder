@@ -1,10 +1,10 @@
 # TextInput
 
-A single-line, pill-shaped text field with an outline border.
+A single-line text field with an outline border and 8px rounded corners.
 
 ## Description
 
-Use `TextInput` wherever users type a short value — names, emails, search terms. It is an outlined capsule with a 1px border that turns brand-colored and thickens on hover and focus, turns red when the value is invalid, and fills with gray when disabled. All native `<input>` attributes are passed through, so it works with any form library.
+Use `TextInput` wherever users type a short value — names, emails, search terms. It is an outlined field with 8px corners (matching `Button`), a 1px border that turns brand-colored and thickens on hover and focus, turns red when the value is invalid, and fills with gray when disabled. All native `<input>` attributes are passed through, so it works with any form library.
 
 ## Component Hierarchy
 
@@ -27,7 +27,7 @@ none
 ## Variants & States
 
 **Variants** (driven by props):
-- default — transparent background, 1px `border-default` border, fully rounded (capsule) corners
+- default — transparent background, 1px `border-default` border, `input` corner radius (8px / 0.5rem)
 - `error` — 1px `feedback-error` (red) border
 
 **States** (driven by interaction or data):

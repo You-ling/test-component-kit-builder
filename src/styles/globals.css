@@ -41,10 +41,13 @@
   /* Border Radius (scale + semantic)
      rounded-sm, rounded-md ... */
   /* RADIUS:START */
+  --radius-xs: 8px;
   --radius-sm: 12px;
   --radius-md: 24px;
   --radius-lg: 40px;
   --radius-xl: 60px;
+  --radius-button: 8px;
+  --radius-input: 8px;
   /* RADIUS:END */
 
   /* Any other token category from design-guideline.json (e.g. shadow) gets its

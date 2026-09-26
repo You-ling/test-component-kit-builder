@@ -97,7 +97,7 @@
       "1000": "#041f0e"
     },
     "white": "#FFFFFF",
-    "black": "#000000"
+    "black": "#1C1C1C"
   },
   "semantic": {
     "light": {
@@ -183,11 +183,15 @@
   },
   "border-radius": {
     "scale": {
+      "xs": "8",
       "sm": "12",
       "md": "24",
       "lg": "40",
       "xl": "60"
     },
-    "semantic": {}
+    "semantic": {
+      "button": "{border-radius.scale.xs}",
+      "input": "{border-radius.scale.xs}"
+    }
   }
 }

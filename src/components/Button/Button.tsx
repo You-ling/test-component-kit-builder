@@ -19,7 +19,7 @@ export function Button({
   ...props
 }: ButtonProps) {
   const base =
-    'inline-flex cursor-pointer items-center justify-center gap-2 rounded-full border font-body font-bold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50'
+    'inline-flex cursor-pointer items-center justify-center gap-2 rounded-button border font-body font-bold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50'
 
   const variants = {
     primary: 'border-brand-primary bg-brand-primary text-text-inverse hover:border-brand-hover hover:bg-brand-hover',
