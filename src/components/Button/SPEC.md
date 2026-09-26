@@ -25,9 +25,11 @@ none
 ## Variants & States
 
 **Variants** (driven by props):
-- `primary` — solid blue background, white text
-- `secondary` — light gray background, dark text
-- `ghost` — no background, text only, gray on hover
+- `primary` — solid `brand-primary` (royal) background, `text-inverse` (white) text; darkens to `brand-hover` on hover
+- `secondary` — transparent background, 1px `brand-primary` border and text; fills with `brand-subtle` on hover
+- `ghost` — no background or border, `brand-primary` text; fills with `brand-subtle` on hover
+
+All variants are capsule-shaped (fully rounded) and use the body font (Montserrat) at bold weight (700).
 
 **Sizes**:
 - `sm` — 32px tall
@@ -35,7 +37,9 @@ none
 - `lg` — 48px tall
 
 **States** (driven by interaction or data):
-- `disabled` — reduced opacity, not clickable
+- `hover` — see each variant above; cursor becomes a pointer
+- `focus-visible` — 2px `brand-primary` ring with a small gap, shown when reached by keyboard
+- `disabled` — 50% opacity, not clickable
 
 ## Usage Example
 

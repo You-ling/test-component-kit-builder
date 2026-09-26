@@ -281,3 +281,9 @@ import { Button } from '@your-org/your-library-name'
 
 <Button variant="primary">Click me</Button>
 ```
+
+---
+
+## Credits
+
+`CloseIcon`, `MenuIcon` and `SettingsIcon` in `src/components/Icons/` are [Material Symbols](https://fonts.google.com/icons) by Google, licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0). No visible attribution is required in products that use them.

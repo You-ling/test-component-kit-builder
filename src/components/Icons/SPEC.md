@@ -22,12 +22,15 @@ none
 
 Each icon is a separate named export:
 
-- `HomeIcon`
+- `CloseIcon`
 - `HomeFillIcon`
-- `ImgIcon`
+- `HomeIcon`
 - `ImgFillIcon`
-- `PeopleIcon`
+- `ImgIcon`
+- `MenuIcon`
 - `PeopleFillIcon`
+- `PeopleIcon`
+- `SettingsIcon`
 
 This list must stay in sync with `index.ts` and `assets/icons/` — the `sync-icons` skill keeps all three in sync automatically.
 
@@ -38,3 +41,7 @@ import { HomeIcon } from '@/components/Icons'
 
 <HomeIcon className="w-5 h-5 text-gray-500" />
 ```
+
+## Credits
+
+`CloseIcon`, `MenuIcon` and `SettingsIcon` are [Material Symbols](https://fonts.google.com/icons) by Google (Outlined, weight 200, unfilled), licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0). When adding more Material icons, download them with the same style settings so the set stays consistent, and rename each file to `icon_<name>.svg` before running `sync-icons`.

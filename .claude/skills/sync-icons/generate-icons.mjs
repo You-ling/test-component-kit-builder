@@ -98,11 +98,16 @@ function convertSvgToComponent(name, raw) {
   const viewBoxMatch = rootAttrs.match(/viewBox="([^"]+)"/)
   const viewBox = viewBoxMatch ? viewBoxMatch[1] : '0 0 24 24'
   const rootFillMatch = rootAttrs.match(/\bfill="([^"]+)"/)
-  const rootFill = rootFillMatch ? rootFillMatch[1] : 'none'
+  let rootFill = rootFillMatch ? rootFillMatch[1] : 'none'
 
   let inner = innerRaw.trim()
   inner = stripNoopClip(inner, viewBox)
-  inner = replaceSingleColorWithCurrentColor(inner)
+  // Some exporters (e.g. Google Material Symbols) put the only color on the
+  // root <svg> — include it in the single-tone check so it's recolored too.
+  const recolored = replaceSingleColorWithCurrentColor(`<g fill="${rootFill}">${inner}</g>`)
+  const recoloredMatch = recolored.match(/^<g fill="([^"]+)">([\s\S]*)<\/g>$/)
+  rootFill = recoloredMatch[1]
+  inner = recoloredMatch[2]
   inner = convertAttrs(inner)
   const indented = inner
     .split('\n')

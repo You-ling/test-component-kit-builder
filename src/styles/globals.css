@@ -1,22 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
 @import "tailwindcss";
 
 @theme {
   /* COLORS:START */
+  --color-brand-primary: #1845b8;
+  --color-brand-hover: #113285;
+  --color-brand-subtle: #becef7;
+  --color-brand-accent: #fbca55;
+  --color-text-default: #00253a;
+  --color-text-muted: #7d7d7d;
+  --color-text-inverse: #FFFFFF;
+  --color-surface-page: #fcfaf2;
+  --color-surface-card: #FFFFFF;
+  --color-surface-disabled: #e6e6e6;
+  --color-border-default: #e6e6e6;
+  --color-feedback-error: #dc2626;
+  --color-feedback-success: #16a34a;
+  --color-feedback-warning: #fbca55;
+  --color-feedback-info: #1ba8d8;
   /* COLORS:END */
 
   /* Typography
      font-display, font-body */
-  --font-display: ;
-  --font-body: ;
+  --font-display: Montserrat;
+  --font-body: Montserrat;
 
   /* Spacing (scale + semantic)
      p-2xs, p-sm, m-md, gap-lg ... */
   /* SPACING:START */
+  --spacing-2xs: 2px;
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 64px;
   /* SPACING:END */
 
   /* Border Radius (scale + semantic)
      rounded-sm, rounded-md ... */
   /* RADIUS:START */
+  --radius-sm: 12px;
+  --radius-md: 24px;
+  --radius-lg: 40px;
+  --radius-xl: 60px;
   /* RADIUS:END */
 
   /* Any other token category from design-guideline.json (e.g. shadow) gets its
@@ -28,6 +56,21 @@
 @media (prefers-color-scheme: dark) {
   :root {
     /* COLORS:START */
+    --color-brand-primary: #5982ea;
+    --color-brand-hover: #8ca8f0;
+    --color-brand-subtle: #081941;
+    --color-brand-accent: #fbca55;
+    --color-text-default: #fcfaf2;
+    --color-text-muted: #b2b2b2;
+    --color-text-inverse: #00253a;
+    --color-surface-page: #00253a;
+    --color-surface-card: #17425a;
+    --color-surface-disabled: #494949;
+    --color-border-default: #216186;
+    --color-feedback-error: #e97878;
+    --color-feedback-success: #4ee786;
+    --color-feedback-warning: #fbca55;
+    --color-feedback-info: #6bcced;
     /* COLORS:END */
   }
 }

@@ -1,106 +1,186 @@
 {
   "palette": {
-    "ocean": {
-      "100": "#e6f1ff",
-      "200": "#c2ddff",
-      "300": "#94c2ff",
-      "400": "#5da3ff",
-      "500": "#3b82f6",
-      "600": "#2563eb",
-      "700": "#1d4ed8",
-      "800": "#1e40af",
-      "900": "#1e3a8a",
-      "1000": "#172554"
+    "navy": {
+      "100": "#f3f9fc",
+      "200": "#c7e2f1",
+      "300": "#9bcbe6",
+      "400": "#70b4db",
+      "500": "#449ed0",
+      "600": "#2c81b1",
+      "700": "#216186",
+      "800": "#17425a",
+      "900": "#00253a",
+      "1000": "#050f14"
+    },
+    "royal": {
+      "100": "#f1f5fd",
+      "200": "#becef7",
+      "300": "#8ca8f0",
+      "400": "#5982ea",
+      "500": "#265ce3",
+      "600": "#1845b8",
+      "700": "#113285",
+      "800": "#0d2563",
+      "900": "#081941",
+      "1000": "#040c20"
+    },
+    "sky": {
+      "100": "#f1fafd",
+      "200": "#c5ebf8",
+      "300": "#98dbf2",
+      "400": "#6bcced",
+      "500": "#3ebce7",
+      "600": "#1ba8d8",
+      "700": "#1584aa",
+      "800": "#0f607c",
+      "900": "#0a3d4e",
+      "1000": "#041920"
+    },
+    "sun": {
+      "100": "#fffaf0",
+      "200": "#fdeabc",
+      "300": "#fcda89",
+      "400": "#fbca55",
+      "500": "#fabb24",
+      "600": "#e6a405",
+      "700": "#b68104",
+      "800": "#855e03",
+      "900": "#543c02",
+      "1000": "#231901"
+    },
+    "cream": {
+      "100": "#fcfaf2",
+      "200": "#e8e4d4",
+      "300": "#d6cfb2",
+      "400": "#c4ba91",
+      "500": "#b2a570",
+      "600": "#9c8d54",
+      "700": "#7b6f42",
+      "800": "#595130",
+      "900": "#38331e",
+      "1000": "#17150c"
     },
     "neutral": {
-      "100": "#f8fafc",
-      "200": "#f1f5f9",
-      "300": "#e2e8f0",
-      "400": "#cbd5e1",
-      "500": "#94a3b8",
-      "600": "#64748b",
-      "700": "#334155",
-      "800": "#1e293b",
-      "900": "#0f172a",
-      "1000": "#020617"
+      "100": "#fafafa",
+      "200": "#e6e6e6",
+      "300": "#cccccc",
+      "400": "#b2b2b2",
+      "500": "#979797",
+      "600": "#7d7d7d",
+      "700": "#636363",
+      "800": "#494949",
+      "900": "#2f2f2f",
+      "1000": "#141414"
     },
-    "coral": {
-      "100": "#fff1f0",
-      "200": "#ffd8d4",
-      "300": "#ffb3aa",
-      "400": "#ff8a7a",
-      "500": "#ff5c42",
-      "600": "#e6432a",
-      "700": "#c22f1a",
-      "800": "#8f2013",
-      "900": "#5c140c",
-      "1000": "#330a06"
+    "red": {
+      "100": "#fdf2f2",
+      "200": "#f6c9c9",
+      "300": "#f0a0a0",
+      "400": "#e97878",
+      "500": "#e34f4f",
+      "600": "#dc2626",
+      "700": "#ae1c1c",
+      "800": "#7e1414",
+      "900": "#4f0d0d",
+      "1000": "#1f0505"
+    },
+    "green": {
+      "100": "#f2fdf6",
+      "200": "#bbf6d1",
+      "300": "#84eeab",
+      "400": "#4ee786",
+      "500": "#1dda63",
+      "600": "#16a34a",
+      "700": "#12823b",
+      "800": "#0d612c",
+      "900": "#09401d",
+      "1000": "#041f0e"
     },
     "white": "#FFFFFF",
     "black": "#000000"
   },
-
   "semantic": {
     "light": {
+      "brand": {
+        "primary": "{palette.royal.600}",
+        "hover": "{palette.royal.700}",
+        "subtle": "{palette.royal.200}",
+        "accent": "{palette.sun.400}"
+      },
       "text": {
-        "default": "{palette.neutral.900}",
+        "default": "{palette.navy.900}",
         "muted": "{palette.neutral.600}",
         "inverse": "{palette.white}"
       },
       "surface": {
-        "page": "{palette.white}",
-        "card": "{palette.neutral.100}"
+        "page": "{palette.cream.100}",
+        "card": "{palette.white}",
+        "disabled": "{palette.neutral.200}"
       },
-      "brand": {
-        "primary": "{palette.ocean.600}",
-        "hover": "{palette.ocean.700}"
+      "border": {
+        "default": "{palette.neutral.200}"
       },
       "feedback": {
-        "error": "{palette.coral.600}"
+        "error": "{palette.red.600}",
+        "success": "{palette.green.600}",
+        "warning": "{palette.sun.400}",
+        "info": "{palette.sky.600}"
       }
     },
     "dark": {
+      "brand": {
+        "primary": "{palette.royal.400}",
+        "hover": "{palette.royal.300}",
+        "subtle": "{palette.royal.900}",
+        "accent": "{palette.sun.400}"
+      },
       "text": {
-        "default": "{palette.neutral.100}",
+        "default": "{palette.cream.100}",
         "muted": "{palette.neutral.400}",
-        "inverse": "{palette.neutral.900}"
+        "inverse": "{palette.navy.900}"
       },
       "surface": {
-        "page": "{palette.neutral.900}",
-        "card": "{palette.neutral.800}"
+        "page": "{palette.navy.900}",
+        "card": "{palette.navy.800}",
+        "disabled": "{palette.neutral.800}"
       },
-      "brand": {
-        "primary": "{palette.ocean.400}",
-        "hover": "{palette.ocean.300}"
+      "border": {
+        "default": "{palette.navy.700}"
       },
       "feedback": {
-        "error": "{palette.coral.400}"
+        "error": "{palette.red.400}",
+        "success": "{palette.green.400}",
+        "warning": "{palette.sun.400}",
+        "info": "{palette.sky.400}"
       }
     }
   },
-
   "typography": {
     "fonts": {
-      "display": "Fraunces",
-      "body": "Inter"
+      "display": "Montserrat",
+      "body": "Montserrat"
     },
-    "imports": ["https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Inter:wght@400;500&display=swap"]
+    "weights": {
+      "display": "700",
+      "body": "300"
+    },
+    "imports": [
+      "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap"
+    ]
   },
-
   "spacing": {
     "scale": {
       "2xs": "2",
-      "xs":  "4",
-      "sm":  "8",
-      "md":  "16",
-      "lg":  "24",
-      "xl":  "32",
+      "xs": "4",
+      "sm": "8",
+      "md": "16",
+      "lg": "24",
+      "xl": "32",
       "2xl": "48",
       "3xl": "64"
     },
     "semantic": {}
   },
-
   "border-radius": {
     "scale": {
       "sm": "12",

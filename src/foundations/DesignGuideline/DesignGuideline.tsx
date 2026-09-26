@@ -17,7 +17,11 @@ interface Guideline {
     light?: Record<string, Record<string, string>>
     dark?: Record<string, Record<string, string>>
   }
-  typography: { fonts: { display: string; body: string }; imports: string[] }
+  typography: {
+    fonts: { display: string; body: string }
+    weights?: { display?: string; body?: string }
+    imports: string[]
+  }
   spacing: ScaleGroup
   'border-radius': ScaleGroup
 }
@@ -338,16 +342,30 @@ function TypographySection({ typography }: { typography: Guideline['typography']
         <div>
           <p className="text-xs uppercase tracking-wide text-gray-400">
             display — {typography.fonts.display || 'not set'}
+            {typography.weights?.display && ` · ${typography.weights.display}`}
           </p>
-          <p className="text-3xl text-gray-900" style={{ fontFamily: typography.fonts.display || undefined }}>
+          <p
+            className="text-3xl text-gray-900"
+            style={{
+              fontFamily: typography.fonts.display || undefined,
+              fontWeight: typography.weights?.display || undefined,
+            }}
+          >
             The quick brown fox jumps over the lazy dog
           </p>
         </div>
         <div>
           <p className="text-xs uppercase tracking-wide text-gray-400">
             body — {typography.fonts.body || 'not set'}
+            {typography.weights?.body && ` · ${typography.weights.body}`}
           </p>
-          <p className="text-base text-gray-900" style={{ fontFamily: typography.fonts.body || undefined }}>
+          <p
+            className="text-base text-gray-900"
+            style={{
+              fontFamily: typography.fonts.body || undefined,
+              fontWeight: typography.weights?.body || undefined,
+            }}
+          >
             The quick brown fox jumps over the lazy dog.
           </p>
         </div>
